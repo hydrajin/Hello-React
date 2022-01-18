@@ -31,7 +31,8 @@ const Application = () => {
         placeholder="Type your Name"
       />
       <Button reset={reset} buttonText="Reset"/>
-      <h1>Hello {name}</h1>
+      {/* {name.length > 0 && <h1>Hello {name}</h1>} */}
+      {name && <h1>Hello {name}</h1>}
     </main>
   );
 };
