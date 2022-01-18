@@ -4,10 +4,10 @@ import './index.css';
 
 const Button = (props) => {
   // your code here
-  const {buttonText} = props;
+  const {buttonText, reset} = props;
 
   return (
-    <button>
+    <button onClick={reset}>
       {buttonText}
     </button>
   );
@@ -24,7 +24,7 @@ const Application = () => {
 
   return (
     <main>
-      <Button buttonText="Reset"/>
+      <Button reset={reset} buttonText="Reset"/>
       <h1>Hello React</h1>
     </main>
   );
