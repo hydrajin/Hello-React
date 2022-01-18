@@ -12,10 +12,10 @@ const Button = (props) => {
     </button>
   );
 };
-
+ 
 const Application = () => {
-
   // your code here
+  const [name, setName] = useState("Suliman");
 
   const reset = () => {
     console.log("reset");
@@ -25,7 +25,7 @@ const Application = () => {
   return (
     <main>
       <Button reset={reset} buttonText="Reset"/>
-      <h1>Hello React</h1>
+      <h1>Hello {name}</h1>
     </main>
   );
 };
